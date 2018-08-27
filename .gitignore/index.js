@@ -5,7 +5,7 @@ var prefix = (configjson.prefix)
 
 tokenbot = configjson.token
 
-bot.login(tokenbot)
+bot.login(process.env.TOKEN);
 
 bot.on('ready', function() {
     bot.user.setGame("Command: /help")
